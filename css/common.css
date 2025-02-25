@@ -10,13 +10,34 @@ header {
     grid-area: header;
     padding: 1rem;
     height: 3rem;
-    background-color: white;
+    color: white;
 }
 
-main {
+header a {
+    color: white;
+    text-decoration: none;
+    font-family: "JetBrains Mono", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    transition: all 200ms;
+    padding: 0 0.5rem;
+}
+
+header a:hover:not(.logo a) {
+    background-color: white;
+    color: black;
+}
+
+header .logo a {
+    font-weight: 800;
+    font-size: large;
+}
+
+/* main {
     margin-top: 4rem;
     padding-top: 1rem;
-}
+} */
 
 header .header-container {
     display: flex;
@@ -105,15 +126,15 @@ header .header-desktop nav ul {
 }
 
 .become-member-container a {
-    border: solid 2px black;
+    border: solid 2px white;
     padding: 0.5rem;
     border-radius: 1rem;
     transition: all 300ms;
 }
 
 .become-member-container a:hover {
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
 }
 
 .hamburger-menu {
