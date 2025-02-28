@@ -11,6 +11,16 @@ header {
     padding: 1rem;
     height: 3rem;
     color: white;
+    z-index: 10;
+    transition: all 200ms;
+}
+
+header.scrolled {
+    background-color: black;
+}
+
+body:has(header .header-mobile .hamburger-button input:checked) header a {
+    color: black;
 }
 
 header a {
@@ -34,11 +44,6 @@ header .logo a {
     font-size: large;
 }
 
-/* main {
-    margin-top: 4rem;
-    padding-top: 1rem;
-} */
-
 header .header-container {
     display: flex;
     justify-content: space-between;
@@ -49,7 +54,7 @@ header .header-desktop {
     display: none;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 600px) {
     header .header-mobile {
         display: none;
     }
@@ -90,15 +95,14 @@ header .header-mobile .hamburger-button input:checked~.icon {
 
 header .header-mobile .hamburger-button .icon div {
     width: 1.5rem;
-    border: solid black 1px;
-    background-color: black;
+    border: solid white 1px;
     pointer-events: none;
     transition: all 200ms;
     position: relative;
 }
 
 header .header-mobile .hamburger-button input:checked+.icon div {
-    background-color: red;
+    border-color: black;
 }
 
 header .header-mobile .hamburger-button input:checked+.icon div:nth-child(odd) {
@@ -140,8 +144,8 @@ header .header-desktop nav ul {
 .hamburger-menu {
     position: fixed;
     width: 100vw;
-    height: calc(100vh - 5rem);
-    top: 5rem;
+    height: 100vh;
+    padding-top: 5rem;
     left: -100vw;
     transition: all 200ms;
     background-color: white;

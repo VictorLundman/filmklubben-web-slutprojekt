@@ -8,7 +8,6 @@
     flex-direction: column;
     padding-left: 10rem;
     padding-bottom: 10rem;
-    gap: 2rem;
     box-sizing: border-box;
 }
 
@@ -20,9 +19,66 @@
 
 .hero-container h1.hero {
     margin: 0;
-    color: white;
+    color: black;
     font-family: "Oswald", serif;
     font-optical-sizing: auto;
     font-weight: 800;
     font-style: normal;
+    display: inline;
+    font-size: 2.5rem;
+}
+
+.hero-container .become-member-container {
+    display: inline;
+    margin-top: 2rem;
+}
+
+.hero-container .become-member-container a {
+    font-family: "JetBrains Mono", serif;
+    border-color: black;
+    color: black;
+    text-decoration: none;
+}
+
+.hero-container .become-member-container a:hover {
+    border-color: black;
+    background-color: black;
+    color: white;
+}
+
+.hero-container .hero-text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0rem;
+    background-color: white;
+    padding: 2rem;
+    width: 30rem;
+    border-radius: 1rem;
+}
+
+.hero-container p {
+    margin: 0.5rem 0 0 0;
+    font-family: "JetBrains Mono", serif;
+    color: #2f2f2f;
+}
+
+.meetings {
+    background-color: #e5ff9c;
+    padding: 2px;
+    height: calc(100vh - 5rem);
+    box-sizing: border-box;
+}
+
+.meetings .meetings-container {
+    background-color: black;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 2rem 4rem;
+}
+
+.meetings .meetings-container h2 {
+    margin: 0;
+    color: white;
+    font-family: "Oswald", serif;
+    font-size: 2rem;
 }
