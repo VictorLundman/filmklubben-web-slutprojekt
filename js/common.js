@@ -1,3 +1,4 @@
+// Make header have a bg when scrolled down a bit
 const header = document.querySelector("header");
 
 addEventListener("scroll", () => {

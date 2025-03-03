@@ -65,13 +65,14 @@
 .meetings {
     background-color: #e5ff9c;
     padding: 2px;
-    height: calc(100vh - 5rem);
     box-sizing: border-box;
+    width: 100%;
 }
 
 .meetings .meetings-container {
     background-color: black;
     height: 100%;
+    width: 100%;
     box-sizing: border-box;
     padding: 2rem 4rem;
 }
@@ -81,4 +82,60 @@
     color: white;
     font-family: "Oswald", serif;
     font-size: 2rem;
+}
+
+.meeting-cards-container {
+    display: grid;
+    grid-template-columns: auto;
+    box-sizing: border-box;
+    gap: 1rem;
+}
+
+.meeting-cards-container .meeting-card {
+    aspect-ratio: 27 / 40;
+    border-radius: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.meeting-cards-container .meeting-card img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.meeting-cards-container .meeting-card p {
+    position: absolute;
+    margin: 0;
+    top: 1rem;
+    left: 1rem;
+    font-family: "JetBrains Mono", serif;
+    background-color: white;
+    padding: 0.1rem 0.2rem;
+}
+
+@media screen and (min-width: 800px) {
+    .meetings {
+        height: calc(100vh - 5rem);
+    }
+
+    .meetings-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .meeting-cards-container {
+        display: flex;
+        gap: 1rem;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        flex-grow: 100;
+        overflow-x: scroll;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .meeting-cards-container {
+        grid-template-columns: auto auto;
+    }
 }
