@@ -150,10 +150,15 @@ header .header-desktop nav ul {
     left: -100vw;
     transition: all 200ms;
     background-color: white;
+    z-index: 10;
 }
 
 body:has(header .header-mobile .hamburger-button input:checked) .hamburger-menu {
     left: 0;
+}
+
+body:has(header .header-mobile .hamburger-button input:checked) header {
+    background-color: white;
 }
 
 .hamburger-menu nav ul {

@@ -6,15 +6,26 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding-left: 10rem;
+    padding-left: 2rem;
     padding-bottom: 10rem;
     box-sizing: border-box;
+}
+
+@media screen and (min-width: 800px) {
+    .hero-container {
+        padding-left: 10rem;
+    }
 }
 
 @media screen and (min-width: 1300px) {
     .hero-container {
         background-position: 0 -15rem;
     }
+}
+
+.hero-text-container {
+    max-width: 90%;
+    box-sizing: border-box;
 }
 
 .hero-container h1.hero {
@@ -66,7 +77,7 @@
     background-color: #e5ff9c;
     padding: 2px;
     box-sizing: border-box;
-    width: 100%;
+    width: 100vw;
 }
 
 .meetings .meetings-container {
@@ -86,16 +97,26 @@
 
 .meeting-cards-container {
     display: grid;
+    /* grid-template-columns: auto; */
+    /* box-sizing: border-box; */
+    /* gap: 1rem; */
+}
+
+
+.meeting-scroll-container {
+    display: grid;
     grid-template-columns: auto;
     box-sizing: border-box;
     gap: 1rem;
 }
 
 .meeting-cards-container .meeting-card {
-    aspect-ratio: 27 / 40;
+    aspect-ratio: 27 / 40 !important;
     border-radius: 1rem;
     position: relative;
     overflow: hidden;
+    height: 100%;
+    border: solid 2px white;
 }
 
 .meeting-cards-container .meeting-card img {
@@ -114,6 +135,13 @@
     padding: 0.1rem 0.2rem;
 }
 
+
+@media screen and (min-width: 600px) {
+    .meeting-scroll-container {
+        grid-template-columns: auto auto;
+    }
+}
+
 @media screen and (min-width: 800px) {
     .meetings {
         height: calc(100vh - 5rem);
@@ -122,20 +150,27 @@
     .meetings-container {
         display: flex;
         flex-direction: column;
+        padding: 2rem 0rem 2rem 4rem !important;
+        width: 100%;
     }
 
     .meeting-cards-container {
+        /* flex-grow: 100; */
+        overflow-x: scroll;
+        height: 100%;
+        width: 100%;
+    }
+
+    .meeting-card {
+        box-sizing: border-box;
+    }
+
+    .meeting-scroll-container {
         display: flex;
         gap: 1rem;
         flex-direction: row;
         flex-wrap: nowrap;
-        flex-grow: 100;
-        overflow-x: scroll;
-    }
-}
-
-@media screen and (min-width: 600px) {
-    .meeting-cards-container {
-        grid-template-columns: auto auto;
+        height: 100%;
+        margin-right: 4rem;
     }
 }
