@@ -153,6 +153,36 @@ header .header-desktop nav ul {
     z-index: 10;
 }
 
+.hamburger-menu nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-family: "JetBrains Mono", serif;
+    padding: 0 0.5rem;
+    transition: all 200ms;
+}
+
+.hamburger-menu nav ul li a:hover {
+    color: white;
+    background-color: black;
+}
+
+.hamburger-menu .become-member-container {
+    margin-top: 1rem;
+}
+
+.hamburger-menu .become-member-container a {
+    border: 2px solid black;
+    color: black;
+    font-family: "JetBrains Mono", serif;
+    text-decoration: none;
+    transition: all 200ms;
+}
+
+.hamburger-menu .become-member-container a:hover {
+    background-color: black;
+    color: white;
+}
+
 body:has(header .header-mobile .hamburger-button input:checked) .hamburger-menu {
     left: 0;
 }
@@ -168,4 +198,79 @@ body:has(header .header-mobile .hamburger-button input:checked) header {
     flex-direction: column;
     align-items: center;
     gap: 1rem;
+}
+
+footer {
+    width: 100vw;
+    background-color: black;
+    border-top: solid white 0.5px;
+    box-sizing: border-box;
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+footer h2 {
+    margin: 0;
+    color: white;
+    font-family: "Oswald", serif;
+    font-size: 2rem;
+    text-align: center;
+}
+
+footer form {
+    display: flex;
+    width: 100%;
+    gap: 1rem;
+}
+
+footer form input {
+    flex-grow: 100;
+    background-color: white;
+    border: none;
+    font-family: "JetBrains Mono", serif;
+    font-optical-sizing: auto;
+    padding: 1rem;
+}
+
+footer form button {
+    background-color: #e5ff9c;
+    border: none;
+    padding: 0 1rem;
+    font-family: "JetBrains Mono", serif;
+}
+
+footer .nav-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+footer .nav-container nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+footer .nav-container nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-family: "JetBrains Mono", serif;
+    transition: all 200ms;
+    padding: 0 0.5rem;
+}
+
+footer .nav-container nav ul li a:hover {
+    color: black;
+    background-color: white;
 }

@@ -174,3 +174,64 @@
         margin-right: 4rem;
     }
 }
+
+.about {
+    max-width: 100vw;
+    box-sizing: border-box;
+    padding: 2rem;
+}
+
+.about h2 {
+    margin: 0;
+    color: white;
+    font-family: "Oswald", serif;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.about-container:not(:nth-child(2)) {
+    margin-top: 2rem;
+}
+
+.about-container.right {
+    flex-direction: column;
+}
+
+.about-container aside img {
+    aspect-ratio: 1;
+    width: 100%;
+    object-fit: cover;
+}
+
+.about-container p {
+    color: white;
+    font-family: "JetBrains Mono", serif;
+}
+
+@media screen and (min-width: 550px) {
+    .about-container {
+        display: grid;
+        grid-template-columns: 4fr 6fr;
+        gap: 1rem;
+    }
+
+    .about-container.right {
+        grid-template-columns: 6fr 4fr;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .about-container {
+        grid-template-columns: 7fr 3fr;
+        gap: 10rem;
+    }
+
+    .about-container.right {
+        grid-template-columns: 3fr 7fr;
+    }
+}

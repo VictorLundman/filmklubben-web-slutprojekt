@@ -1,0 +1,106 @@
+main section:first-child {
+    margin-top: 5rem;
+}
+
+section {
+    padding: 2rem 4rem;
+    box-sizing: border-box;
+}
+
+h2 {
+    margin: 0;
+    color: white;
+    font-family: "Oswald", serif;
+    font-size: 2rem;
+    padding-bottom: 1rem;
+}
+
+.next-meeting .movie-info-container {
+    display: flex;
+    flex-direction: column-reverse;
+    color: white;
+    font-family: "JetBrains Mono", serif;
+}
+
+.next-meeting .movie-info-container a {
+    background-color: #e5ff9c;
+    border: none;
+    padding: 1rem 1rem;
+    font-family: "JetBrains Mono", serif;
+    text-decoration: none;
+    color: black;
+}
+
+.next-meeting .movie-info-container ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.next-meeting .movie-info-container p {
+    margin-bottom: 2rem;
+}
+
+.next-meeting .movie-info-container img {
+    aspect-ratio: 27 / 40;
+    width: 100%;
+}
+
+@media screen and (min-width: 600px) {
+    .next-meeting .movie-info-container {
+        display: grid;
+        grid-template-columns: 70% 30%;
+        gap: 2rem;
+        width: calc(100% - 2rem);
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .next-meeting .movie-info-container {
+        gap: 10rem;
+        width: calc(100% - 10rem);
+    }
+}
+
+.meeting-container {
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 2rem;
+}
+
+.meeting-card {
+    aspect-ratio: 27 / 40;
+    border-radius: 1rem;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    border: solid 2px white;
+}
+
+.meeting-card img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.meeting-card p {
+    position: absolute;
+    margin: 0;
+    top: 1rem;
+    left: 1rem;
+    font-family: "JetBrains Mono", serif;
+    background-color: white;
+    padding: 0.1rem 0.2rem;
+}
+
+@media screen and (min-width: 600px) {
+    .meeting-container {
+        grid-template-columns: auto auto;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .meeting-container {
+        grid-template-columns: auto auto auto auto;
+    }
+}
