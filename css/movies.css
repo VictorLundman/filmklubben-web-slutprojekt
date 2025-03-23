@@ -1,0 +1,78 @@
+main section:first-child {
+    margin-top: 5rem;
+}
+
+section {
+    padding: 2rem 4rem;
+    box-sizing: border-box;
+}
+
+h2 {
+    margin: 0;
+    color: white;
+    font-family: "Oswald", serif;
+    font-size: 2rem;
+    padding-bottom: 1rem;
+}
+
+p {
+    color: white;
+    font-family: "JetBrains Mono", serif;
+}
+
+.movies-container {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 2rem;
+}
+
+.movie-rating-card {
+    width: 100%;
+    border-radius: 1rem;
+    overflow: hidden;
+    border: solid 2px white;
+}
+
+.movie-rating-card img {
+    width: 100%;
+    aspect-ratio: 27 / 40 !important;
+}
+
+.movie-rating-card h2 {
+    margin: 1rem 1rem 0 1rem;
+    padding-bottom: 0;
+}
+
+.movie-rating-card span {
+    color: white;
+    margin: 0 1rem 0 1rem;
+    font-family: "JetBrains Mono", serif;
+}
+
+.movie-rating-card p {
+    margin: 1rem 1rem 1rem 1rem;
+}
+
+@media screen and (min-width: 600px) {
+    .movie-rating-card {
+        box-sizing: border-box;
+        padding: 1rem;
+    }
+
+    .movie-rating-card span {
+        margin: 0;
+    }
+
+    .movie-rating-card img {
+        margin: 0 2rem 2rem 0;
+        width: 40%;
+        float: left;
+        border-radius: 1rem;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .movies-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
