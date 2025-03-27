@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filmklubben</title>
+
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/become-member.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Oswald:wght@200..700&display=swap"
+        rel="stylesheet">
+
+    <script src="/js/become-member.js" defer></script>
+</head>
+
+<body>
+    <div class="hamburger-menu">
+        <nav>
+            <ul>
+                <li><a href="/">Hem</a></li>
+                <li><a href="/meetings.html">Träffar</a></li>
+                <li><a href="/movies.html">Filmer</a></li>
+                <li><a href="/about.html">Om Klubben</a></li>
+                <div class="become-member-container">
+                    <a href="/become-member.html">Bli Medlem</a>
+                </div>
+            </ul>
+        </nav>
+    </div>
+    <header class="scrolled">
+        <div class="header-container header-desktop">
+            <div class="logo"><a href="/">Filmklubben</a></div>
+            <div>
+                <nav>
+                    <ul>
+                        <li><a href="/">Hem</a></li>
+                        <li><a href="/meetings.html">Träffar</a></li>
+                        <li><a href="/movies.html">Filmer</a></li>
+                        <li><a href="/about.html">Om Klubben</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="become-member-container">
+                <a href="/become-member.html">Bli Medlem</a>
+            </div>
+        </div>
+        <div class="header-container header-mobile">
+            <div class="logo"><a href="/">Filmklubben</a></div>
+            <div class="hamburger-button">
+                <input type="checkbox">
+                <div class="icon">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div>
+                <h2>Bli medlem</h2>
+                <form>
+                    <div class="label-group">
+                        <label for="first-name">Förnamn</label>
+                        <input type="text" placeholder="Victor" id="first-name" name="first-name">
+                    </div>
+                    <div class="label-group">
+                        <label for="last-name">Efternamn</label>
+                        <input type="text" placeholder="Lundman" id="last-name" name="last-name">
+                    </div>
+                    <div class="label-group email">
+                        <label for="email">Mejladress</label>
+                        <input type="email" placeholder="din.email@adress.com" id="email" name="email">
+                    </div>
+                    <div class="label-group email">
+                        <label for="password">Lösenord</label>
+                        <div class="password-container">
+                            <input type="password" placeholder="••••••••" id="password" name="password">
+                            <button id="toggle-password" type="button">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="show-password" width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path
+                                        d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0" />
+                                    <circle cx="12" cy="12" r="3" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="hide-password" width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path
+                                        d="M10.733 5.076a10.744 10.744 0 0 1 11.205 6.575 1 1 0 0 1 0 .696 10.747 10.747 0 0 1-1.444 2.49" />
+                                    <path d="M14.084 14.158a3 3 0 0 1-4.242-4.242" />
+                                    <path
+                                        d="M17.479 17.499a10.75 10.75 0 0 1-15.417-5.151 1 1 0 0 1 0-.696 10.75 10.75 0 0 1 4.446-5.143" />
+                                    <path d="m2 2 20 20" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <button>Bli medlem</button>
+                    <span class="tos">När du blir medlem accapterar du våra <a href="#">vilkor</a> och <a
+                            href="#">integritetspolicy</a>.</span>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="form-container">
+            <h2>Prenummerera på vårat nyhetsbrev!</h2>
+            <form>
+                <input type="email" placeholder="din.email@adress.com">
+                <button>Prenummerera</button>
+            </form>
+            <div class="nav-container">
+                <nav>
+                    <ul>
+                        <li><a href="#">Link 1</a></li>
+                        <li><a href="#">Link 2</a></li>
+                        <li><a href="#">Link 3</a></li>
+                        <li><a href="#">Link 4</a></li>
+                    </ul>
+                </nav>
+                <nav>
+                    <ul>
+                        <li><a href="#">Link 1</a></li>
+                        <li><a href="#">Link 2</a></li>
+                        <li><a href="#">Link 3</a></li>
+                        <li><a href="#">Link 4</a></li>
+                    </ul>
+                </nav>
+                <nav>
+                    <ul>
+                        <li><a href="#">Link 1</a></li>
+                        <li><a href="#">Link 2</a></li>
+                        <li><a href="#">Link 3</a></li>
+                        <li><a href="#">Link 4</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,130 @@
+main section:first-child {
+    margin-top: 5rem;
+}
+
+section {
+    padding: 2rem 4rem;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+
+h2 {
+    margin: 0;
+    color: white;
+    font-family: "Oswald", serif;
+    font-size: 2rem;
+    padding-bottom: 1rem;
+}
+
+main form {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr auto auto;
+    gap: 1rem;
+    max-width: 50rem;
+}
+
+form .label-group {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-family: "JetBrains Mono", serif;
+}
+
+@media screen and (min-width: 800px) {
+    main form {
+        grid-template-rows: 1fr 1fr auto auto;
+        grid-template-columns: 1fr 1fr !important;
+    }
+
+    form .email {
+        grid-column: 1 / 3;
+    }
+
+    main form button {
+        grid-column: 1 / 3;
+    }
+
+    .tos {
+        grid-column: 1 / 3;
+    }
+}
+
+.password-container {
+    position: relative;
+    margin-top: 0.5rem;
+    display: grid;
+    grid-template-columns: auto 3rem;
+    background-color: white;
+}
+
+#toggle-password {
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#toggle-password .show-password {
+    display: none;
+}
+
+#toggle-password.toggled .hide-password {
+    display: none;
+}
+
+#toggle-password.toggled .show-password {
+    display: unset;
+}
+
+#toggle-password {
+    padding: 0;
+    grid-column: 2 / 3 !important;
+}
+
+#toggle-password svg {
+    width: 1.2rem;
+}
+
+main form input {
+    width: 100%;
+    margin-top: 0.5rem;
+    box-sizing: border-box;
+    background-color: white;
+    border: none;
+    font-family: "JetBrains Mono", serif;
+    font-optical-sizing: auto;
+    padding: 1rem;
+}
+
+main form .password-container input {
+    margin-top: 0;
+    background-color: transparent;
+}
+
+main form button {
+    background-color: #e5ff9c;
+    border: none;
+    padding: 1rem 1rem;
+    font-family: "JetBrains Mono", serif;
+    cursor: pointer;
+}
+
+main form button:hover {
+    text-decoration: underline;
+}
+
+.tos {
+    color: #d7d7d7;
+    font-family: "JetBrains Mono", serif;
+}
+
+.tos a {
+    color: white;
+    transition: 200ms all;
+}
+
+.tos a:hover {
+    color: #e5ff9c;
+}

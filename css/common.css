@@ -246,6 +246,11 @@ footer form button {
     border: none;
     padding: 0 1rem;
     font-family: "JetBrains Mono", serif;
+    cursor: pointer;
+}
+
+footer form button:hover {
+    text-decoration: underline;
 }
 
 footer .nav-container {
