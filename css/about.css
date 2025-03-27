@@ -1,0 +1,53 @@
+main section:first-child {
+    margin-top: 5rem;
+}
+
+section {
+    padding: 2rem 4rem;
+    box-sizing: border-box;
+}
+
+h2 {
+    margin: 0;
+    color: white;
+    font-family: "Oswald", serif;
+    font-size: 2rem;
+    padding-bottom: 1rem;
+}
+
+h3 {
+    color: white;
+    font-family: "Oswald", serif;
+}
+
+p {
+    color: white;
+    font-family: "JetBrains Mono", serif;
+}
+
+.us-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.us-container .us {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.us-container .us img {
+    aspect-ratio: 1;
+    width: 12rem;
+    border-radius: 9999px;
+}
+
+@media screen and (min-width: 800px) {
+    .us-container {
+        flex-direction: row;
+        gap: 1rem;
+    }
+}
