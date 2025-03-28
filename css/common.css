@@ -3,6 +3,7 @@ body {
     display: grid;
     grid-template-areas: "header" "body" "footer";
     background-color: black;
+    overflow-x: hidden;
 }
 
 header {
@@ -45,6 +46,10 @@ header .logo a {
     font-size: large;
 }
 
+header .logo a img {
+    height: 35px;
+}
+
 header .header-container {
     display: flex;
     justify-content: space-between;
@@ -55,7 +60,7 @@ header .header-desktop {
     display: none;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 800px) {
     header .header-mobile {
         display: none;
     }
@@ -239,6 +244,7 @@ footer form input {
     font-family: "JetBrains Mono", serif;
     font-optical-sizing: auto;
     padding: 1rem;
+    border-radius: 0;
 }
 
 footer form button {
@@ -247,6 +253,7 @@ footer form button {
     padding: 0 1rem;
     font-family: "JetBrains Mono", serif;
     cursor: pointer;
+    color: black;
 }
 
 footer form button:hover {

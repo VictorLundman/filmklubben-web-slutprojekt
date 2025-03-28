@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Filmklubben</title>
+    <meta name="description" content="Bli medlem i Filmklubben">
 
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/become-member.css">
@@ -26,9 +27,11 @@
                 <li><a href="/meetings.html">Träffar</a></li>
                 <li><a href="/movies.html">Filmer</a></li>
                 <li><a href="/about.html">Om Klubben</a></li>
-                <div class="become-member-container">
-                    <a href="/become-member.html">Bli Medlem</a>
-                </div>
+                <li>
+                    <div class="become-member-container">
+                        <a href="/become-member.html">Bli Medlem</a>
+                    </div>
+                </li>
             </ul>
         </nav>
     </div>
@@ -50,15 +53,15 @@
             </div>
         </div>
         <div class="header-container header-mobile">
-            <div class="logo"><a href="/">Filmklubben</a></div>
-            <div class="hamburger-button">
-                <input type="checkbox">
+            <div class="logo"><a href="/"><img src="/img/filmklubben-logga.png" alt="Filmklubben"></a></div>
+            <form class="hamburger-button">
+                <input type="checkbox" id="toggle-hamburger" aria-label="toggle hamburger">
                 <div class="icon">
                     <div></div>
                     <div></div>
                     <div></div>
                 </div>
-            </div>
+            </form>
         </div>
     </header>
     <main>
@@ -82,7 +85,7 @@
                         <label for="password">Lösenord</label>
                         <div class="password-container">
                             <input type="password" placeholder="••••••••" id="password" name="password">
-                            <button id="toggle-password" type="button">
+                            <button id="toggle-password" type="button" aria-label="Show password">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="show-password" width="24" height="24"
                                     viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                                     stroke-linecap="round" stroke-linejoin="round">
@@ -104,7 +107,7 @@
                         </div>
                     </div>
                     <button>Bli medlem</button>
-                    <span class="tos">När du blir medlem accapterar du våra <a href="#">vilkor</a> och <a
+                    <span class="tos">När du blir medlem godkänner du våra <a href="#">vilkor</a> och <a
                             href="#">integritetspolicy</a>.</span>
                 </form>
             </div>

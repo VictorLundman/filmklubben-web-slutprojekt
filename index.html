@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Filmklubben</title>
+  <meta name="description" content="Filmklubben, världens bästa filmklubb">
 
   <link rel="stylesheet" href="css/common.css">
   <link rel="stylesheet" href="css/index.css">
@@ -26,15 +27,17 @@
         <li><a href="/meetings.html">Träffar</a></li>
         <li><a href="/movies.html">Filmer</a></li>
         <li><a href="/about.html">Om Klubben</a></li>
-        <div class="become-member-container">
-          <a href="/become-member">Bli Medlem</a>
-        </div>
+        <li>
+          <div class="become-member-container">
+            <a href="/become-member.html">Bli Medlem</a>
+          </div>
+        </li>
       </ul>
     </nav>
   </div>
   <header>
     <div class="header-container header-desktop">
-      <div class="logo"><a href="/">Filmklubben</a></div>
+      <div class="logo"><a href="/"><img src="/img/filmklubben-logga.png" alt="Filmklubben"></a></div>
       <div>
         <nav>
           <ul>
@@ -51,14 +54,14 @@
     </div>
     <div class="header-container header-mobile">
       <div class="logo"><a href="/">Filmklubben</a></div>
-      <div class="hamburger-button">
-        <input type="checkbox">
+      <form class="hamburger-button">
+        <input type="checkbox" id="toggle-hamburger" aria-label="toggle hamburger">
         <div class="icon">
           <div></div>
           <div></div>
           <div></div>
         </div>
-      </div>
+      </form>
     </div>
   </header>
   <main>
@@ -67,7 +70,7 @@
         <h1 class="hero">Världens bästa filmklubb</h1>
         <p>Älskar du film lika mycket som oss? I sådana fall, varför inte bli medlem i världens bästa filmklubb!</p>
         <div class="become-member-container">
-          <a href="/become-member">Bli Medlem</a>
+          <a href="/become-member.html">Bli Medlem</a>
         </div>
       </div>
     </section>
@@ -111,12 +114,12 @@
           neque eius vero illo quisquam. Fugiat nulla cupiditate provident ratione repellendus odit itaque qui suscipit
           aperiam dolore a pariatur facere fuga, tenetur quam eaque illo.</p>
         <aside>
-          <img src="/img/movie-theater.jpg" alt="">
+          <img src="/img/theater1.jpg" alt="Movie theater">
         </aside>
       </div>
       <div class="about-container right">
         <aside>
-          <img src="/img/movie-theater.jpg" alt="">
+          <img src="/img/theater2.jpg" alt="Movie theater">
         </aside>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus eum non voluptates nobis autem ullam,
           neque eius vero illo quisquam. Fugiat nulla cupiditate provident ratione repellendus odit itaque qui suscipit
@@ -127,7 +130,7 @@
           neque eius vero illo quisquam. Fugiat nulla cupiditate provident ratione repellendus odit itaque qui suscipit
           aperiam dolore a pariatur facere fuga, tenetur quam eaque illo.</p>
         <aside>
-          <img src="/img/movie-theater.jpg" alt="">
+          <img src="/img/theater3.jpg" alt="Projector">
         </aside>
       </div>
     </section>

@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Filmklubben</title>
+    <meta name="description" content="Recenserade filmer av Filmklubben">
 
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/movies.css">
@@ -24,9 +25,11 @@
                 <li><a href="/meetings.html">Träffar</a></li>
                 <li><a href="/movies.html">Filmer</a></li>
                 <li><a href="/about.html">Om Klubben</a></li>
-                <div class="become-member-container">
-                    <a href="/become-member.html">Bli Medlem</a>
-                </div>
+                <li>
+                    <div class="become-member-container">
+                        <a href="/become-member.html">Bli Medlem</a>
+                    </div>
+                </li>
             </ul>
         </nav>
     </div>
@@ -48,15 +51,15 @@
             </div>
         </div>
         <div class="header-container header-mobile">
-            <div class="logo"><a href="/">Filmklubben</a></div>
-            <div class="hamburger-button">
-                <input type="checkbox">
+            <div class="logo"><a href="/"><img src="/img/filmklubben-logga.png" alt="Filmklubben"></a></div>
+            <form class="hamburger-button">
+                <input type="checkbox" id="toggle-hamburger" aria-label="toggle hamburger">
                 <div class="icon">
                     <div></div>
                     <div></div>
                     <div></div>
                 </div>
-            </div>
+            </form>
         </div>
     </header>
     <main>

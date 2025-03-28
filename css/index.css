@@ -26,6 +26,13 @@
 .hero-text-container {
     max-width: 90%;
     box-sizing: border-box;
+    margin-top: 15rem;
+}
+
+@media screen and (min-height: 500px) and (min-width: 500px) {
+    .hero-text-container {
+        margin-top: 0;
+    }
 }
 
 .hero-container h1.hero {

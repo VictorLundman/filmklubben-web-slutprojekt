@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Filmklubben</title>
+    <meta name="description" content="filmklubbens kommande filmträffar">
 
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/meetings.css">
@@ -24,15 +25,17 @@
                 <li><a href="/meetings.html">Träffar</a></li>
                 <li><a href="/movies.html">Filmer</a></li>
                 <li><a href="/about.html">Om Klubben</a></li>
-                <div class="become-member-container">
-                    <a href="/become-member.html">Bli Medlem</a>
-                </div>
+                <li>
+                    <div class="become-member-container">
+                        <a href="/become-member.html">Bli Medlem</a>
+                    </div>
+                </li>
             </ul>
         </nav>
     </div>
     <header class="scrolled">
         <div class="header-container header-desktop">
-            <div class="logo"><a href="/">Filmklubben</a></div>
+            <div class="logo"><a href="/"><img src="/img/filmklubben-logga.png" alt="Filmklubben"></a></div>
             <div>
                 <nav>
                     <ul>
@@ -49,14 +52,14 @@
         </div>
         <div class="header-container header-mobile">
             <div class="logo"><a href="/">Filmklubben</a></div>
-            <div class="hamburger-button">
-                <input type="checkbox">
+            <form class="hamburger-button">
+                <input type="checkbox" id="toggle-hamburger" aria-label="toggle hamburger">
                 <div class="icon">
                     <div></div>
                     <div></div>
                     <div></div>
                 </div>
-            </div>
+            </form>
         </div>
     </header>
     <main>

@@ -96,6 +96,7 @@ main form input {
     font-family: "JetBrains Mono", serif;
     font-optical-sizing: auto;
     padding: 1rem;
+    border-radius: 0;
 }
 
 main form .password-container input {
@@ -109,6 +110,7 @@ main form button {
     padding: 1rem 1rem;
     font-family: "JetBrains Mono", serif;
     cursor: pointer;
+    color: black;
 }
 
 main form button:hover {
